@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+
+    #Active la réecriture d'URL
+    RewriteEngine On
+
+    #Chemin de base pour la réecriture
+    RewriteBase /
+    
+    #Si le fichier ou dossier demandé n'existe pas...
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    #...redirige tout vers index.php
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+    
+</IfModule>

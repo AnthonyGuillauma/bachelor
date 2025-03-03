@@ -1,0 +1,141 @@
+body {
+    object-fit: cover;
+    background-image: url("../assets/images/world-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: none;
+}
+
+#introduction {
+    height: 90vh;
+}
+
+#introduction-world{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction-world-name{
+    border-bottom: white 2px solid;
+    text-align: center;
+    font-size: 10vh;
+    margin-bottom: 2vh;
+}
+
+#introduction-world-description{
+    font-size: 2vh;
+    text-align: center;
+}
+
+#world-presentation{
+    background-color: black;
+    height: 97vh;
+}
+
+@media screen and (max-width: 678px) {
+    #introduction-world-description{
+        width: 80vw;
+    }
+}
+
+#world-particularities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    gap: 1vh;
+}
+
+#button-close-world-presentation{
+    position: fixed;
+    display: none;
+    top: 2vh;
+    right:2vw;
+    color: white;
+    z-index: 14;
+    width: 5vw;
+    height: 5vh;
+    background-color: rgb(240, 234, 189);
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.world-particularity{
+    position: relative;
+    height: 30%;
+    width: 30%;
+    border: .04rem solid #898989;
+    transition: width 1s ease;
+    background-size: 100vw 120%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.world-particularity:hover{
+    width: 99%;
+    background-size: 100vw 120%;
+}
+
+.world-particularity-right{
+    align-self: flex-end;
+    background-position: right;
+}
+
+.world-particularity-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-weight: bold;
+}
+
+.world-particularity-presentation{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 13;
+    width: 100vw;
+    height: 100vh;
+    display:none;
+    background-color: black;
+    overflow: auto;
+    place-content: center;
+    align-items: center;
+}
+
+#story-world{
+    background-image: url("../assets/images/world-story.png");
+}
+
+#landscapes-world{
+    background-image: url("../assets/images/landscapes.png");
+}
+
+#world-map{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    object-fit: contain;
+}
+#civilizations-world{
+    background-image: url("../assets/images/civilisation.png");
+}
+
+
+@media screen and (max-width: 900px) {
+    .world-particularity{
+        width: 90%;
+        background-size: auto 100%;
+    }
+    .world-particularity:hover{
+        background-size: auto 100%;
+    }
+}

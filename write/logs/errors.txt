@@ -1,0 +1,6 @@
+ERROR : [2025-02-16 22:22:26] Format de l'email invalide. dans C:\Users\Work\App\Xampp\htdocs\web\app\models\ConnectionModel.php à la ligne 33
+ERROR : [2025-02-16 22:25:25] Format de l'email invalide. dans C:\Users\Work\App\Xampp\htdocs\web\app\models\ConnectionModel.php à la ligne 33
+ERROR : [2025-02-17 21:46:03] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined dans C:\Users\Work\App\Xampp\htdocs\web\app\models\ConnectionModel.php à la ligne 122
+ERROR : [2025-02-17 21:46:57] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined dans C:\Users\Work\App\Xampp\htdocs\web\app\models\ConnectionModel.php à la ligne 122
+ERROR : [2025-02-18 20:09:47] SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée dans C:\Users\Work\App\Xampp\htdocs\web\app\models\Model.php à la ligne 18
+ERROR : [2025-02-18 20:09:55] SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée dans C:\Users\Work\App\Xampp\htdocs\web\app\models\Model.php à la ligne 18

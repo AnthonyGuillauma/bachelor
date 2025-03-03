@@ -1,0 +1,67 @@
+/* Modification du header uniquement pour cette page*/
+header{
+    position:absolute;
+    top:2vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navigation-menu{
+    position: absolute;
+    top: 7vh;
+}
+
+/* Page */
+
+#logo{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 8vw;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 30px rgba(255, 255, 255, 0.2);
+}
+
+#main_video_home{
+    width: 99.5vw;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+@keyframes floatEffect {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -1vh);
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#main_text_home{
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 10vh;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    animation: floatEffect 3s ease-in-out infinite;
+    user-select: none;
+}
+
+@media screen and (max-width: 678px) {
+    #main_text_home{
+        font-size: 5vw;
+    }
+}
