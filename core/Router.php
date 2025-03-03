@@ -10,10 +10,9 @@ class Router {
      * @return void
      */
     public function run() {
-
         //URL de la requête
         $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $prefix = "/BACHELOR_PHP_GUILLAUMA/public/index.php";
+        $prefix = dirname($_SERVER['SCRIPT_NAME']);
         if (str_starts_with($url, $prefix)){
             $url = substr($url, strlen($prefix));
         }
@@ -22,7 +21,7 @@ class Router {
 
         //Méthode GET : Demande de page
         if ($method == "GET") {
-            if ($url == ""){ //Page d'accueil
+            if ($url == "/" || $url == "/index.php"){ //Page d'accueil
                 include_once("../app/controllers/MainController.php");
                 $controller = new MainController();
                 $controller->pageHome();

@@ -59,7 +59,7 @@ class Controller {
      * @return void
      */
     public function redirectTo(string $url){
-        header("Location: /BACHELOR_PHP_GUILLAUMA/public/index.php$url"); 
+        header("Location: .$url"); 
         exit;
     }
 

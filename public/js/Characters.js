@@ -56,7 +56,7 @@ function openCharacterInformation(id){
         document.getElementById("button-next-character").style.display = "block";
     }
     const character = characters[id];
-    characterInformationSplashArt.src = "../assets/images/characters_splash_arts/" + id + ".jpg";
+    characterInformationSplashArt.src = "./assets/images/characters_splash_arts/" + id + ".jpg";
     characterInformationName.textContent = character["name"];
     characterInformationVoice.textContent = character["voice"];
     if (!(characterInformation.classList.contains("character-information-displayed"))){
@@ -132,7 +132,7 @@ function getCharacterFromID(id){
 function playCurrentCharacterVoice(){
     const characterID = currentFirstCharacter;
     const numberVoiceline = getNextNumberVoicelineCaracter(characterID);
-    document.getElementById("character-voice-audio").src = "../assets/sounds/characters/" + characterID + "_" + numberVoiceline  + ".mp3";
+    document.getElementById("character-voice-audio").src = "./assets/sounds/characters/" + characterID + "_" + numberVoiceline  + ".mp3";
     document.getElementById("character-voice-audio").play();
 
     lastVoicePlayed["characterID"] = characterID;

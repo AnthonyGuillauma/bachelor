@@ -6,9 +6,9 @@
 /** @var string Racine des fichiers des vues */
 $viewBasePath = "../app/views";
 /** @var string Racine des fichiers css */
-$styleBasePath = "/BACHELOR_PHP_GUILLAUMA/public/style";
+$styleBasePath = "./style";
 /** @var string Racine des fichiers javascript */
-$jsBasePath = "/BACHELOR_PHP_GUILLAUMA/public/js";
+$jsBasePath = "./js";
 
 /** @var object Chemins des fichiers */
 $paths = (object) array(

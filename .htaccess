@@ -2,7 +2,10 @@
 
 RewriteEngine On
 
-RewriteCond %{REQUEST_URI} !^/BACHELOR_PHP_GUILLAUMA/public/
-RewriteRule BACHELOR_PHP_GUILLAUMA/public/$1 [L,R=302]
+# Détecte automatiquement le dossier racine
+RewriteCond %{REQUEST_URI} !^/public/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [L]
     
 </IfModule>
