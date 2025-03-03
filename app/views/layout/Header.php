@@ -9,7 +9,7 @@
         <a href="/web/public/index.php/news">Actualités</a> 
         <a href="/web/public/index.php/characters">Personnages</a> 
         <a href="/web/public/index.php/world">Monde</a> 
-        <img id="buttonBackgroundMusic" src="assets/icons/muted.png" onclick="changeBackgroundMusicState();"/>
+        <img id="buttonBackgroundMusic" src="/web/public/assets/icons/muted.png" onclick="changeBackgroundMusicState();"/>
     </nav>
     <!-- AUDIO -->
     <audio id="background-music" loop>

@@ -16,7 +16,7 @@ class ConnectionController extends Controller {
         //Si l'utilisateur est déjà connecté...
         if ($this->isConnected()){
             //...redirection à la page d'accueil
-            $this->redirectTo("/");
+            $this->redirectTo("");
         }
         //Sinon s'il n'est pas connecté...
         else{
@@ -34,7 +34,7 @@ class ConnectionController extends Controller {
         //Si l'utilisateur est déjà connecté...
         if ($this->isConnected()){
             //...redirection à la page d'accueil
-            $this->redirectTo("/");
+            $this->redirectTo("");
         }
         //Sinon s'il n'est pas connecté
         else{
@@ -58,7 +58,7 @@ class ConnectionController extends Controller {
                 $_SESSION["lastname"] = $user->lastname;
                 $_SESSION["last_login"] = $user->last_login;
                 //Redirection vers la page d'accueil
-                $this->redirectTo("/");
+                $this->redirectTo("");
             }
             //Si les données ne sont pas valident
             else{
@@ -80,7 +80,7 @@ class ConnectionController extends Controller {
             session_destroy();
         }
         //Redirection vers la page d'accueil
-        $this->redirectTo("/");
+        $this->redirectTo("");
     }
 
     /**
@@ -92,7 +92,7 @@ class ConnectionController extends Controller {
         //Si il est déjà connecté...
         if ($this->isConnected()){
             //...redirection vers la page d'acceuil
-            $this->redirectTo("/");
+            $this->redirectTo("");
         }
         //Sinon s'il n'est pas connecté...
         else{
@@ -110,7 +110,7 @@ class ConnectionController extends Controller {
         //Si il est déjà connecté...
         if ($this->isConnected()){
             //...redirection vers la page d'acceuil
-            $this->redirectTo("/");
+            $this->redirectTo("");
         }
         //Sinon s'il n'est pas connecté
         else{

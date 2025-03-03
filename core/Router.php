@@ -22,7 +22,7 @@ class Router {
 
         //Méthode GET : Demande de page
         if ($method == "GET") {
-            if ($url == "/" || $url == ""){ //Page d'accueil
+            if ($url == ""){ //Page d'accueil
                 include_once("../app/controllers/MainController.php");
                 $controller = new MainController();
                 $controller->pageHome();
