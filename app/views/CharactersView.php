@@ -6,7 +6,7 @@
                 <!-- <span id="title-character">Personnages</span> -->
                 <?php 
                     foreach ($datas["origins"] as $id => $information){
-                        echo("<div class='origin' style='order:" . $information["display_order"] . ";' onclick=\"changeOrigin('$id');\"><img class='logo-origin' src='assets/images/places_of_origin_logos/" . $id . ".png'/><span>" . $information["name"] ."</span></div>");
+                        echo("<div class='origin' style='order:" . $information["display_order"] . ";' onclick=\"changeOrigin('$id');\"><img class='logo-origin' src='../assets/images/places_of_origin_logos/" . $id . ".png'/><span>" . $information["name"] ."</span></div>");
                     }
                 ?>
             </div>
@@ -20,7 +20,7 @@
                 <div id="list-characters">
                     <?php 
                         foreach($datas["characters"] as $id => $character){
-                            echo("<div id=\"character-$id\" class=\"character\" onclick=\"openCharacter('$id');\">" . "<img src=\"assets/images/characters_splash_arts/banniere$id.jpg\"/></div>");
+                            echo("<div id=\"character-$id\" class=\"character\" onclick=\"openCharacter('$id');\">" . "<img src=\"../assets/images/characters_splash_arts/banniere$id.jpg\"/></div>");
                         }
                     ?>
                 </div>

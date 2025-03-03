@@ -13,12 +13,16 @@ class Router {
 
         //URL de la requête
         $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $prefix = "/web/public/index.php";
+        if (str_starts_with($url, $prefix)){
+            $url = substr($url, strlen($prefix));
+        }
         //Méthode de la requête
         $method = $_SERVER['REQUEST_METHOD'];
 
         //Méthode GET : Demande de page
         if ($method == "GET") {
-            if ($url == "/"){ //Page d'accueil
+            if ($url == "/" || $url == ""){ //Page d'accueil
                 include_once("../app/controllers/MainController.php");
                 $controller = new MainController();
                 $controller->pageHome();

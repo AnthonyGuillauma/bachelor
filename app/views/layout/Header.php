@@ -1,14 +1,14 @@
     <!-- HEADER -->
     <header>
-        <h1 onclick="window.location.replace('/')">Shooting stars</h1>
+        <h1 onclick="window.location.replace('/web/public/index.php')">Shooting stars</h1>
     </header>
     <!-- MENU NAVIGATION -->
     <a id="navigation-menu-button" onclick="changeBurgerMenuState();">≡</a>
     <nav id="navigation-menu" class="burger-menu-close">
         <span></span> 
-        <a href="/news">Actualités</a> 
-        <a href="/characters">Personnages</a> 
-        <a href="/world">Monde</a> 
+        <a href="/web/public/index.php/news">Actualités</a> 
+        <a href="/web/public/index.php/characters">Personnages</a> 
+        <a href="/web/public/index.php/world">Monde</a> 
         <img id="buttonBackgroundMusic" src="assets/icons/muted.png" onclick="changeBackgroundMusicState();"/>
     </nav>
     <!-- AUDIO -->
