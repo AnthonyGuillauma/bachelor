@@ -13,7 +13,7 @@ class Router {
 
         //URL de la requête
         $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $prefix = "/web/public/index.php";
+        $prefix = "/BACHELOR_PHP_GUILLAUMA/public/index.php";
         if (str_starts_with($url, $prefix)){
             $url = substr($url, strlen($prefix));
         }

@@ -2,8 +2,7 @@
 
 RewriteEngine On
 
-# Redirige vers "public/" si l'URL ne contient pas déjà "public/"
-RewriteCond %{REQUEST_URI} !^/web/public/
-RewriteRule web/public/$1 [L,R=302]
+RewriteCond %{REQUEST_URI} !^/BACHELOR_PHP_GUILLAUMA/public/
+RewriteRule BACHELOR_PHP_GUILLAUMA/public/$1 [L,R=302]
     
 </IfModule>
